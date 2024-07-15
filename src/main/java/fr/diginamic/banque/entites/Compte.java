@@ -3,16 +3,16 @@ package fr.diginamic.banque.entites;
 public class Compte {
 
     int numeroCompte;
-    int solde;
+    public int solde;
 
     public Compte(int numeroCompte, int solde) {
         this.numeroCompte = numeroCompte;
         this.solde = solde;
     }
 
-    //public int getNumeroCompte() {
-      //  return numeroCompte;
-    //}
+    public int getNumeroCompte() {
+        return numeroCompte;
+    }
 
     public int getSolde() {
         return solde;
