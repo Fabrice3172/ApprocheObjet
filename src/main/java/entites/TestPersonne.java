@@ -26,6 +26,15 @@ public class TestPersonne {
         p2.adr.numeroDeRue = 47;
         p2.adr.ville = "Pamiers";
 
+        p1.afficher(); //40 rue du midi 31400 Toulouse
+
+        p1.modifierAdresse(adr2);
+
+        p1.afficherAdr(); //47 Route de Villeneuve 9100 Pamiers
+
+
+        Personne p3 = new Personne("Monsieur","Jean");
+        p3.afficher();
     }
 
 }
