@@ -29,6 +29,14 @@ public class Ville {
     }
 
     @Override
+    public String toString() {
+        return "Ville{" +
+                "nom='" + nom + '\'' +
+                ", nbHabitants=" + nbHabitants +
+                '}';
+    }
+
+    @Override
     public boolean equals(Object objet ) {
         if (!(objet instanceof Ville)) {
             return false;
