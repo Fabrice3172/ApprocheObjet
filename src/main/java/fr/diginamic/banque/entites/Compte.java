@@ -2,32 +2,32 @@ package fr.diginamic.banque.entites;
 
 public class Compte {
 
-    String numeroCompte;
-    public int solde;
+    String numeroDeCompte;
+    public double solde;
 
-    public Compte(String numeroCompte, int solde) {
-        this.numeroCompte = numeroCompte;
+    public Compte(String numeroDeCompte, double solde) {
+        this.numeroDeCompte = numeroDeCompte;
         this.solde = solde;
     }
 
     public String getNumeroCompte() {
-        return numeroCompte;
+        return numeroDeCompte;
     }
 
-    public int getSolde() {
+    public double getSolde() {
         return solde;
     }
 
     public void setNumeroCompte(String numeroCompte) {
-        this.numeroCompte = numeroCompte;
+        this.numeroDeCompte = numeroCompte;
     }
 
-    public void setSolde(int solde) {
+    public void setSolde(double solde) {
         this.solde = solde;
     }
 
     @Override
     public String toString() {
-        return this.numeroCompte + "   " + this.solde;
+        return this.numeroDeCompte + "   " + this.solde;
     }
 }
