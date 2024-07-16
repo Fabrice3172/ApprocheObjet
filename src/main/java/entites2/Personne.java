@@ -52,4 +52,9 @@ public class Personne {
     public AdressPostale retournerAdr() {
         return this.adr;
     }
+
+    @Override
+    public String toString() {
+        return nom.toUpperCase() + "   " + prenom;
+    }
 }

@@ -35,6 +35,8 @@ public class TestPersonne {
 
         Personne p3 = new Personne("Monsieur","Jean");
         p3.afficher();
+
+        System.out.println(p3);
     }
 
 }
