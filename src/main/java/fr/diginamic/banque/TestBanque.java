@@ -11,13 +11,18 @@ public class TestBanque {
 
         Compte[] tableauComptes = {new Compte("G1234", Integer.MAX_VALUE),  new CompteTaux("G1234", Integer.MAX_VALUE, 50)};
 
-       // tableauComptes[0] = new Compte("G1234", Integer.MAX_VALUE);
+       // Compte[] tableauComptes = Compte[2];
+        // tableauComptes[0] = new Compte("G1234", Integer.MAX_VALUE);
 
        // tableauComptes[1] = new CompteTaux("G1234", Integer.MAX_VALUE, 50);
 
         for (int i=0; i < tableauComptes.length; i++){
             System.out.println("tab" + i + " : " + tableauComptes[i]);
             //System.out.println("tab[1] : " + tableauComptes[1]);
+        }
+
+        for (Compte cpt:tableauComptes){
+            System.out.println(cpt);
         }
     }
 }
